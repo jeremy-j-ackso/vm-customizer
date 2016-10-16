@@ -1,0 +1,81 @@
+R
+	RStudio
+
+Postman
+
+Python
+	anaconda
+	Tensorflow
+
+Node
+	npm - r
+	nodemon
+	nvm
+	postman
+
+MEAN
+	meanJS generator (comes with most things)
+	nodejs
+	npm
+	gulp
+	grunt-cli
+	bower
+	mongodb
+	yeoman
+	nvm
+	postman
+
+serve ???
+
+MERN
+	webpack
+	mongodb
+	nodejs
+	webpack-dev-server
+	mern-cli
+	nvm
+	postman
+
+REACT
+	create-react-app
+	webpack
+	webpack-dev-server
+	node
+	npm
+	nvm
+	postman
+
+text editor alternatives
+	notepadqq
+	geany
+	sublime
+	
+databases
+	MariaDB
+	MySQL
+	mongodb
+	sqlite
+
+geospatial
+	mapshaper
+	gdal/ogr
+
+react native
+	--not supported on linux--
+
+nativescript
+	???
+
+apache cordova
+	https://cordova.apache.org
+
+
+angular2
+	nodejs
+	npm
+	nvm
+	angular2 config files
+	watchman
+	postman
+
+typescript

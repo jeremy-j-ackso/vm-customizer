@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VMConfigure</class>
+ <widget class="QDialog" name="VMConfigure">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Virtual Machine Configure</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>600</y>
+     <width>461</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QTreeWidget" name="treeWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>471</width>
+     <height>581</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>Choose your software</string>
+    </property>
+   </column>
+   <item>
+    <property name="text">
+     <string>Node</string>
+    </property>
+    <property name="checkState">
+     <enum>PartiallyChecked</enum>
+    </property>
+    <property name="flags">
+     <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled|ItemIsTristate</set>
+    </property>
+    <item>
+     <property name="text">
+      <string>npm</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>nodemon</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>nvm</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>postman</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>R</string>
+    </property>
+    <property name="checkState">
+     <enum>PartiallyChecked</enum>
+    </property>
+    <property name="flags">
+     <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled|ItemIsTristate</set>
+    </property>
+    <item>
+     <property name="text">
+      <string>RStudio</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Open Source R</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Microsoft R</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Hadleyverse</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>Python</string>
+    </property>
+    <property name="checkState">
+     <enum>PartiallyChecked</enum>
+    </property>
+    <property name="flags">
+     <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled|ItemIsTristate</set>
+    </property>
+    <item>
+     <property name="text">
+      <string>Jupyter</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Anaconda</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Tensorflow</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>MEAN</string>
+    </property>
+    <property name="checkState">
+     <enum>PartiallyChecked</enum>
+    </property>
+    <property name="flags">
+     <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled|ItemIsTristate</set>
+    </property>
+    <item>
+     <property name="text">
+      <string>NodeJS</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MongoDB</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>npm</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>nvm</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>gulp</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>grunt-cli</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>bower</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>yeoman</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>postman</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>MERN</string>
+    </property>
+    <property name="checkState">
+     <enum>PartiallyChecked</enum>
+    </property>
+    <property name="flags">
+     <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled|ItemIsTristate</set>
+    </property>
+    <item>
+     <property name="text">
+      <string>webpack</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MongoDB</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>webpack-dev-server</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mern-cli</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>postman</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>nvm</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>npm</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NodeJS</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>REACT</string>
+    </property>
+    <property name="checkState">
+     <enum>PartiallyChecked</enum>
+    </property>
+    <property name="flags">
+     <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled|ItemIsTristate</set>
+    </property>
+    <item>
+     <property name="text">
+      <string>create-react-app</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>webpack</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>webpack-dev-server</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>nodejs</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>nvm</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>npm</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>postman</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>Text Editors</string>
+    </property>
+    <property name="checkState">
+     <enum>PartiallyChecked</enum>
+    </property>
+    <property name="flags">
+     <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled|ItemIsTristate</set>
+    </property>
+    <item>
+     <property name="text">
+      <string>NotepadQQ</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Geany</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Sublime</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>Databases</string>
+    </property>
+    <property name="checkState">
+     <enum>PartiallyChecked</enum>
+    </property>
+    <property name="flags">
+     <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled|ItemIsTristate</set>
+    </property>
+    <item>
+     <property name="text">
+      <string>Postgresql</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MariaDB</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MySQL</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MongoDB</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SQLite</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>Geospatial</string>
+    </property>
+    <property name="checkState">
+     <enum>PartiallyChecked</enum>
+    </property>
+    <property name="flags">
+     <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled|ItemIsTristate</set>
+    </property>
+    <item>
+     <property name="text">
+      <string>Mapshaper</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>gdal/ogr</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>Angular 2</string>
+    </property>
+    <property name="checkState">
+     <enum>PartiallyChecked</enum>
+    </property>
+    <property name="flags">
+     <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled|ItemIsTristate</set>
+    </property>
+    <item>
+     <property name="text">
+      <string>NodeJS</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>npm</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>nvm</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Angular2 Config Files</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>watchman</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>postman</string>
+     </property>
+     <property name="checkState">
+      <enum>PartiallyChecked</enum>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>VMConfigure</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>VMConfigure</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
